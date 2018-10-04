@@ -2,151 +2,74 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>GizmoStudios</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-
-    :root {
-      --main-color: white;
-    }
-
-    body {
-      font-family: 'Raleway';
-      color: var(--main-color);
-      margin: 0;
-    }
-
-    #backgroundVideo {
-      position: fixed;
-      min-width: 100%;
-      min-height: 100%;
-    }
-
-    #content {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 1;
-    }
-
-    #logo {
-      margin-bottom: 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #logo h1 {
-      font-weight: normal;
-      font-size: 1.2em;
-      margin-left: -.18em;
-      margin-top: -1.1em;
-      position: relative;
-      z-index: 1;
-    }
-
-    #logo:before,
-    #logo:after {
-        display: block;
-        content: '';
-        width: 5em;
-        height: 5em;
-        transform: rotate(45deg);
-        border: solid 1px var(--main-color);
-        transition: background .15s ease-in-out, border-color .15s ease-in-out;
-    }
-
-    #logo:after {
-      margin-top: -2em;
-    }
-
-    #logo:hover:before {
-      border-color: transparent;
-      background: rgba(255,255,255, .15);
-    }
-
-    #logo:hover:after {
-      border-color: transparent;
-      background: rgba(255,255,255, .3);
-    }
-
-    a {
-      text-decoration: none;
-      padding: .5em;
-      color: var(--main-color);
-      transition: color .15s ease-in-out, transform .15s ease-in-out;
-    }
-
-    a.btn.text-btn {
-      width: 14em;
-      text-align: center;
-      font-size: .86em;
-    }
-
-    a:hover {
-      transform: scale(1.1);
-    }
-
-    a.btn:hover {
-      color: rgb(0,170,102);
-    }
-
-    .social {
-      display: flex;
-      justify-content: center;
-      font-size: 1.3em;
-      margin: .5em 0;
-    }
-
-    ul.address {
-      list-style: none;
-      margin-top: 2em;
-      padding: 2em 0;
-      border-top: solid 1px var(--main-color);
-      opacity: .4;
-      transition: opacity .4s ease-in-out;
-    }
-
-    ul.address:hover {
-      opacity: 1;
-    }
-
-    ul.address > li {
-      text-align: center;
-      font-size: .5em;
-      padding: .2em;
-    }
-  </style>
-
+	<link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/splash.css" />
 </head>
+
 <body>
 
-<video id="backgroundVideo" autoplay loop muted>
+<video id="backgroundVideo" autoplay muted>
   <source src="assets/videos/djbooth.mp4" type="video/mp4">
+  <!-- <source src="assets/videos/sky.mp4" type="video/mp4"> -->
 </video>
 
-<div id="content">
-  <div
+<div id="content" class="centered">
+  <a
+		href="design"
     id="logo">
-    <h1>
-			<!-- <span>Art</span> -->
+    <h1 id="logoText">
+			<span>Design</span>
+			<span>Development</span>
+			<span>Photography</span>
+			<span>Music</span>
 			<span>GizmoStudios</span>
-			<!-- <span>Technology</span> -->
 		</h1>
-  </div>
+  </a>
+
+	<section>
+		<a
+			class="btn block-btn"
+			href="design">
+			<i class="fas fa-briefcase"></i><span>Portfolio</span>
+		</a>
+
+		<a
+			class="btn block-btn"
+			href="about">
+			<i class="far fa-user-alt"></i><span>About</span>
+		</a>
+
+		<a
+			class="btn block-btn"
+			href="/assets/resume.pdf"
+			target="_blank">
+			<i class="fas fa-file-alt"></i><span>CV</span>
+		</a>
+	</section>
 
   <div class="social">
-    <a class="btn fa fa-instagram" href="https://www.instagram.com/gizmostudios" target="_blank"></a>
-    <a class="btn fa fa-youtube"   href="https://www.youtube.com/gizmostudios"   target="_blank"></a>
-  	<a class="btn fa fa-facebook"  href="https://www.facebook.com/gizmostudios"  target="_blank"></a>
-  	<a class="btn fa fa-twitter"   href="https://twitter.com/gizmostudios_"      target="_blank"></a>
+		<a
+			class="btn fab fa-linkedin"
+			href="https://www.linkedin.com/in/ejhermans"
+			target="_blank">
+		</a>
+    <a
+			class="btn fab fa-instagram"
+			href="https://www.instagram.com/gizmostudios"
+			target="_blank">
+		</a>
+		<a
+			class="btn fab fa-facebook"
+			href="https://www.facebook.com/gizmostudios"
+			target="_blank">
+		</a>
+    <a
+			class="btn fab fa-youtube"
+			href="https://www.youtube.com/gizmostudios"
+			target="_blank">
+		</a>
   </div>
 
   <a
@@ -165,7 +88,7 @@
   	magic@gizmostudios.net
   </a>
 
-  <ul class="address">
+  <ul class="address hidden" id="address">
     <li>Tweede Atjehstraat 48-K</li>
     <li>1094LJ Amsterdam</li>
 		<li>The Netherlands</li>
@@ -174,12 +97,94 @@
       <a
         class="btn"
         href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=705510060000"
-				target="_blank"
-			>
+				target="_blank">
         KVK: 70551006
       </a>
     </li>
   </ul>
+
+	<div class="footer">
+		<a href="design">
+			<h3 class="graphic-title">Design</h3>
+			<svg
+				viewBox="0 0 36 138"
+				class="graphic"
+				id="marker">
+				<g>
+					<rect x="0.559" y="80.115" width="34.016" height="56.693" />
+					<rect x="0.559" y="51.768" width="34.016" height="28.346" />
+					<rect x="6.229" y="40.43" width="22.677" height="11.339" />
+					<path d="M23.236,29.091l-11.338,0l-5.669,11.339l22.677,0l-5.67,-11.339Z" />
+					<rect x="11.898" y="12.083" width="11.339" height="17.008" />
+					<path d="M20.402,0.745l-5.669,0l-0.938,2.858l0,8.504l7.544,0l0,-8.504l-0.937,-2.858Z" />
+				</g>
+			</svg>
+
+		</a>
+		<a href="development">
+			<h3 class="graphic-title">Development</h3>
+			<svg
+				viewBox="0 0 36 138"
+				class="graphic"
+				id="usb">
+				<g>
+					<rect x="10.426" y="80.115" width="8.504" height="56.693" />
+					<path d="M18.93,80.115l-8.504,0l-9.921,-28.347l28.346,0l-9.921,28.347Z" />
+					<rect x="0.505" y="29.091" width="28.346" height="22.677" />
+					<rect x="2.033" y="0.745" width="12.645" height="28.346" />
+					<rect x="14.678" y="0.745" width="12.645" height="28.346" />
+					<rect x="4.782" y="10.666" width="7.146" height="4.252" />
+					<rect x="17.512" y="10.666" width="7.146" height="4.252" />
+				</g>
+			</svg>
+		</a>
+		<a href="photography">
+			<h3 class="graphic-title">Photography</h3>
+			<svg
+				viewBox="0 0 36 138"
+				class="graphic"
+				id="tripod">
+				<g>
+					<rect x="15.437" y="3.819" width="28.346" height="5.599"/>
+					<rect x="17.592" y="46.468" width="24.126" height="5.599"/>
+					<rect x="12.603" y="83.219" width="34.016" height="14.173"/>
+					<path d="M12.603,88.888l-11.773,48.16l8.938,0l8.939,-39.656l-6.104,0l0,-8.504Z"/>
+					<path d="M46.619,88.888l11.773,48.16l-8.939,0l-8.938,-39.656l6.104,0l0,-8.504Z"/>
+					<rect x="21.151" y="52.167" width="17.008" height="31.052"/>
+					<rect x="23.496" y="97.392" width="11.784" height="39.656"/>
+					<path d="M53.604,44.922l1.235,-9.922l0,-8.504l-1.235,-9.921l-5.785,0.029l-1.2,9.922l0,8.603l1.2,9.822l5.785,-0.029Z"/>
+					<rect x="23.941" y="9.518" width="11.339" height="5.669"/>
+					<path d="M43.784,35.104l2.835,0l0,-8.578l-2.835,0"/>
+					<path d="M23.941,15.187c2.833,0.001 8.501,0.002 11.339,0c4.988,2.745 8.504,8.346 8.504,15.591c0,7.297 -3.458,12.877 -8.504,15.59c-2.825,-0.013 -8.506,-0.001 -11.339,0c-5.073,-2.698 -8.504,-8.269 -8.504,-15.59c0,-7.232 3.53,-12.839 8.504,-15.591Z"/>
+					<rect x="26.776" y="0.985" width="5.224" height="2.835"/>
+					<path d="M56.256,33.39l0,-5.224l-1.346,0l0,5.224l1.346,0Z"/>
+					<circle cx="16.175" cy="91.722" r="1.417"/>
+					<circle cx="43.135" cy="91.722" r="1.417"/>
+				</g>
+			</svg>
+		<a href="music">
+			<h3 class="graphic-title">Music</h3>
+			<svg
+				viewBox="0 0 36 138"
+				class="graphic"
+				id="jack">
+				<g>
+					<rect x="0.606" y="79.875" width="22.677" height="56.693" />
+					<rect x="4.858" y="37.455" width="14.173" height="42.52" />
+					<rect x="4.858" y="36.038" width="14.173" height="1.417" />
+					<rect x="4.858" y="21.864" width="14.173" height="14.173" />
+					<rect x="4.858" y="20.447" width="14.173" height="1.417" />
+					<path d="M19.031,6.174l-5.806,-5.669l-2.835,0l-5.532,5.669l0,2.835l2.835,3.543l-2.835,3.72l0,4.175l14.173,0l0,-4.149l-2.835,-3.746l2.835,-3.44l0,-2.938Z" />
+				</g>
+			</svg>
+		</a>
+
+	</div>
+
+	<script src="assets/js/app.js" logoRepeat="true"></script>
+	<script src="//static.getclicky.com/js" type="text/javascript"></script>
+	<script type="text/javascript">try{ clicky.init(101143801); }catch(e){}</script>
+	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101143801ns.gif" /></p></noscript>
 </div>
 
 </body>
