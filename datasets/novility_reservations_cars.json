@@ -1,0 +1,12 @@
+[{
+  "name": "SUV",
+  "plate": "XX-1234-GH",
+  "reservations": [
+    {
+      "name": "Mr. Navneet",
+      "price": 250,
+      "from": "20181010",
+      "until": "20181015"
+    }
+  ]
+}]

@@ -60,10 +60,15 @@ ul.address > li {
   clip-rule: evenodd;
   stroke-linecap: square;
   stroke-miterlimit: 1;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 5s linear forwards;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 10s ease-out;
 }
+
+.graphic#marker {animation-delay: 0.5s}
+.graphic#usb    {animation-delay: 1.0s}
+.graphic#tripod {animation-delay: 1.5s}
+.graphic#jack   {animation-delay: 2.0s}
 
 .graphic-title {
   font-weight: lighter;

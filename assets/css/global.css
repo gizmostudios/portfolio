@@ -1,6 +1,7 @@
 :root {
   --bg-color: black;
   --main-color: white;
+  --main-shade: rgba(255,255,255,.5);
   --active-color: rgb(100, 250, 200);
   --active-shade: rgba(0, 200, 170, 0.5);
   --active-complimentary-shade: rgba(200, 0, 170, 0.5);
@@ -241,7 +242,7 @@ article + article {
   font-weight: normal;
   font-size: 1.2em;
   margin-left: -.18em;
-  margin-top: -0.65em;
+  margin-top: -1em;
   position: relative;
   z-index: 1;
   height: 1.05em;
@@ -261,7 +262,7 @@ article + article {
     width: 5em;
     height: 5em;
     transform: rotate(45deg);
-    border: solid 1px var(--main-color);
+    border: solid 1px var(--main-shade);
     transition:
       background var(--transition-speed) var(--ease),
       border var(--transition-speed) var(--ease);

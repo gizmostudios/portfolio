@@ -6,7 +6,7 @@ const cs = document.currentScript;
 
 // Constants
 const addressShowHeight = 800; //pixels
-const writeSpeed = 50; //miliseconds
+const writeSpeed = 100; //miliseconds
 const eraseDelay = 12; //characters
 const animationInitDelay = cs.getAttribute('animationInitDelay') || 500; //miliseconds
 const videoReplayDelay = 2000; //miliseconds
