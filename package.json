@@ -9,17 +9,17 @@
   "scripts": {
     "test": "There's no test command mapped yet.",
     "scss": "sass --watch src/assets/scss:dist/assets/css",
-    "pug": "pug -O src/settings.json -b src/templates/pages -w -P -o dist",
+    "pug": "pug -O src/settings.json -b src/templates/includes src/templates/pages -w -P -o dist",
     "serve": "http-server dist",
     "livereload": "livereload dist",
-    "develop": "concurrently --kill-others \"npm run pug\" \"npm run scss\" \"npm run livereload\" \"npm run serve\"",
+    "develop": "concurrently --kill-others \"yarn run pug\" \"yarn run scss\" \"yarn run livereload\" \"yarn run serve\"",
     "start": "yarn run develop"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "concurrently": "^5.0.0",
     "http-server": "^0.11.1",
     "livereload": "^0.7.0",
-    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.17.3"
   },
   "dependencies": {
