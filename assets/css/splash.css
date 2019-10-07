@@ -1,0 +1,116 @@
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+  margin: .5em 0;
+}
+
+ul.address {
+  list-style: none;
+  margin-top: 2em;
+  padding: 2em 0;
+  border-top: solid 1px var(--main-color);
+  opacity: .4;
+  transition: opacity var(--transition-speed) var(--ease);
+}
+
+ul.address:hover {
+  opacity: 1;
+}
+
+ul.address > li {
+  text-align: center;
+  font-size: .5em;
+  padding: .2em;
+}
+
+.footer {
+	position: absolute;
+	display: flex;
+	bottom: 0;
+  /* overflow-y: hidden; */
+}
+
+.footer a {
+	display: flex;
+	flex-direction: column;
+  height: 12em;
+	width: 4em;
+	margin: 0 0.5em;
+	padding: 0;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.footer a svg#usb {
+  margin-left: 0.3em;
+}
+
+.footer a svg#jack {
+  transform: translate(.5em, 0);
+}
+
+.footer a svg#tripod {
+  margin-left: -3em;
+  margin-right: -1em;
+}
+
+.graphic {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linecap: square;
+  stroke-miterlimit: 1;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 10s ease-out;
+}
+
+.graphic#marker {animation-delay: 0.5s}
+.graphic#usb    {animation-delay: 1.0s}
+.graphic#tripod {animation-delay: 1.5s}
+.graphic#jack   {animation-delay: 2.0s}
+
+.graphic-title {
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 1em;
+  opacity: 0;
+  color: var(--active-color);
+  transition: opacity var(--transition-speed) var(--ease);
+  pointer-events: none;
+}
+
+.graphic rect,
+.graphic path,
+.graphic circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: stroke var(--transition-speed) var(--ease);
+}
+
+a:hover .graphic rect,
+a:hover .graphic path,
+a:hover .graphic circle {
+  stroke: var(--active-color);
+}
+
+a:hover .graphic-title {
+  opacity: 1;
+}
+
+
+/** Desktop **/
+@media (min-width: 1025px) {
+  .footer a {
+    height: 12em;
+    margin: 0 2em;
+    margin-bottom: -9px;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

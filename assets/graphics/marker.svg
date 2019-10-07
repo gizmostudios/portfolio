@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 36 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+    <g id="marker">
+        <rect x="0.559" y="80.115" width="34.016" height="56.693" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+        <rect x="0.559" y="51.768" width="34.016" height="28.346" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+        <rect x="6.229" y="40.43" width="22.677" height="11.339" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+        <path d="M23.236,29.091l-11.338,0l-5.669,11.339l22.677,0l-5.67,-11.339Z" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+        <rect x="11.898" y="12.083" width="11.339" height="17.008" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+        <path d="M20.402,0.745l-5.669,0l-0.938,2.858l0,8.504l7.544,0l0,-8.504l-0.937,-2.858Z" style="fill:none;stroke:#fff;stroke-width:0.5px;"/>
+    </g>
+</svg>

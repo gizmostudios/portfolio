@@ -1,0 +1,42 @@
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title GizmoStudios
+  link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='assets/css/styles.css')
+video#backgroundVideo(autoplay='' loop='' muted='')
+  source(src='assets/videos/djbooth.mp4' type='video/mp4')
+#content
+  #logo
+    h1
+      // <span>Art</span>
+      span GizmoStudios
+      // <span>Technology</span>
+  .social
+    a.btn.fa.fa-instagram(href='https://www.instagram.com/gizmostudios' target='_blank')
+    a.btn.fa.fa-youtube(href='https://www.youtube.com/gizmostudios' target='_blank')
+    a.btn.fa.fa-facebook(href='https://www.facebook.com/gizmostudios' target='_blank')
+    a.btn.fa.fa-twitter(href='https://twitter.com/gizmostudios_' target='_blank')
+  a.btn.text-btn(href='tel:+31685019249' alt='call me' title='call me')
+    | +31 685 019 249
+  a.btn.text-btn(href='mailto:magic@gizmostudios.net' alt='send me an e-mail' title='send me an e-mail')
+    | magic@gizmostudios.net
+  ul.address
+    li Tweede Atjehstraat 48-K
+    li 1094LJ Amsterdam
+    li The Netherlands
+    li  &middot;  &middot;  &middot; 
+    li
+      a.btn(href='https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=705510060000' target='_blank')
+        | KVK: 70551006
+  .footer
+    a(href='#')
+      img(src='assets/graphics/marker.svg')
+    a(href='#')
+      img(src='assets/graphics/usb.svg')
+    a(href='#')
+      img(src='assets/graphics/jack.svg')
+  script.
+    const VIDEO = document.getElementById("backgroundVideo");
+    VIDEO.playbackRate = 0.75;
+  script(src='http://localhost:35729/livereload.js?snipver=1')
