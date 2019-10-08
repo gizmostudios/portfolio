@@ -1,0 +1,12 @@
+body {
+  color: #333;
+  background: #dfa;
+  height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f0f;
+    background: black;
+  }
+}

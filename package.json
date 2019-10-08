@@ -16,13 +16,14 @@
     "start": "yarn run develop"
   },
   "devDependencies": {
-    "pug-cli": "^1.0.0-alpha6",
     "concurrently": "^5.0.0",
     "http-server": "^0.11.1",
     "livereload": "^0.7.0",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.17.3"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bulma": "^0.7.4"
   }
 }

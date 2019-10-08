@@ -1,16 +1,13 @@
 doctype html
 html(lang='en')
+
   head
     title GizmoStudios
+    link(rel='stylesheet' href='assets/css/bundle.css')
+    include /favicon
+
   body
-    h1 Welcome to my portfolio!
+    .container
+      h1 Welcome to my portfolio!
 
-
-//- Livereload
-script.
-  if(location.host.indexOf('localhost') > -1){
-    document.write('<script src="http://'
-    + (location.host || 'localhost').split(':')[0]
-    + ':35729/livereload.js?snipver=1"></'
-    + 'script>')
-  }
+include /livereload
